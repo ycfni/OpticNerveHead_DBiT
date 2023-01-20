@@ -1,9 +1,9 @@
-# ProjectTemplate
-An empty project template to start with. Contains the directory structure:
+# OpticNerveHead_DBiT
+Processing for 25um DBiT data on optic nerve head samples from open angle glaucoma and control samples
 
 
 ```
-ProjectName_version
+OpticNerveHead_DBiT
 |	README.md
 |	.gitignore
 |
