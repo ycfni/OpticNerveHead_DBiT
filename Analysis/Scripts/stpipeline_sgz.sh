@@ -32,7 +32,7 @@ ANN=/gpfs/ycga/datasets/genomes/Mus_musculus/UCSC/mm10/Annotation/Genes/genes.gt
 #CONT=/gpfs/ycga/project/fan/yd279/Spatial_omics_references/mouse/GRCm38_86/ncRNA/StarIndex/
 
 
-############################## SGZ: fix these paths for Rawdata_processing (copy in this OpticNerveHead_DBiT repo)
+############################## SGZ: COPY FILES INTO HIS REPO and fix these paths for Rawdata_processing (copy in this OpticNerveHead_DBiT repo)
 
 #converttoname_mmd.
 #converttoname_mmd.
@@ -44,6 +44,8 @@ ANN=/gpfs/ycga/datasets/genomes/Mus_musculus/UCSC/mm10/Annotation/Genes/genes.gt
 #stpipeline_mmd.sh 
 #stpipeline.sh     
 #stpipeline.sh.orig
+
+
 
 
 # Barcodes settings
