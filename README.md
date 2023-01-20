@@ -27,13 +27,3 @@ OpticNerveHead_DBiT
 	|	
 	|	InfoAboutProject.txt
 
-```
-
-Complete the setup with:
-
-```
-mkdir data
-mkdir data/raw
-mkdir data/processed
-mkdir ReferenceFiles
-```
