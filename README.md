@@ -55,3 +55,10 @@ mkdir ReferenceFiles
     ```
     python Analysis/Python/fastq_process.py -i data/raw/MyFastqFile_R2.fastq.gz
     ```
+
+- Run st_pipeline with
+
+   ```
+   sbatch Analysis/Scripts/stpipeline_submit.sh
+   ```
+
