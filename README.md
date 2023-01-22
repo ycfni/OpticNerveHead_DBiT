@@ -41,7 +41,7 @@ mkdir ReferenceFiles
 
 - To run from raw data you need to get [st_pipeline](https://github.com/jfnavarro/st_pipeline) installed.  See [Analysis/Environment.txt](Analysis/Environment.txt).
 
-     [st_pipeline usage manual](https://htmlpreview.github.io/?https://raw.githubusercontent.com/jfnavarro/st_pipeline/master/docs/manual.html)
+     - [st_pipeline usage manual](https://htmlpreview.github.io/?https://raw.githubusercontent.com/jfnavarro/st_pipeline/master/docs/manual.html)
 
 - Then you need to build a reference for [STAR aligner](https://github.com/alexdobin/STAR). See [Analysis/Scripts/BuildSTARreference.sh](Analysis/Scripts/BuildSTARreference.sh).
 
