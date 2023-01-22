@@ -13,6 +13,7 @@
 # (uncomment if needed)
 module load miniconda
 conda init
+
 conda activate stpipeline
 
 
@@ -43,7 +44,7 @@ mkdir -p $TMP
 EXP=ONH_001
 
 # Running the pipeline
-st_pipeline/scripts/st_pipeline_run.py \
+st_pipeline_run.py \
   --output-folder $OUTPUT \
   --ids $ID \
   --ref-map $MAP \
