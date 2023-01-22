@@ -1,0 +1,63 @@
+Environment.txt
+@marcello.distasio@yale.edu
+Jan 2023
+stpipeline installation notes
+
+
+####################################################################################################
+On ruddle.hpc.yale.edu had to do:
+
+--------------------------------------------------
+module load miniconda
+mamba create --name stpipeline python=3.6
+conda activate stpipeline
+conda install -c bioconda star
+conda install -c bioconda samtools
+pip install cython
+pip install numpy
+pip install taggd
+
+pip install stpipeline
+
+git clone git@github.com:jfnavarro/st_pipeline.git
+python setup.py build
+python setup.py install
+--------------------------------------------------
+
+Now st_pipeline_run.py is available on $PATH at ~/.conda/envs/stpipeline/bin/st_pipeline_run.py
+
+####################################################################################################
+
+
+
+
+--------------------------------------------------
+
+pip freeze:
+
+cycler==0.11.0
+Cython==0.29.33
+HTSeq==0.13.5
+invoke==2.0.0
+joblib==1.1.1
+kiwisolver==1.3.1
+matplotlib==3.3.4
+numpy==1.19.5
+pandas==1.1.5
+Pillow==8.4.0
+Pympler==1.0.1
+pyparsing==3.0.9
+pysam==0.20.0
+python-dateutil==2.8.2
+pytz==2022.7.1
+regex==2022.10.31
+scikit-learn==0.24.2
+scipy==1.5.4
+seaborn==0.11.2
+six==1.16.0
+sqlitedict==2.1.0
+stpipeline==1.8.1
+taggd==0.3.6
+threadpoolctl==3.1.0
+
+

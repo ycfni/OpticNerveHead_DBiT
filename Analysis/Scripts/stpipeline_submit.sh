@@ -1,7 +1,20 @@
 #!/bin/bash
+#SBATCH --partition=general
+#SBATCH --job-name=stpipeline
+#SBATCH --cpus-per-task=12
+#SBATCH --mem=64G
+#SBATCH --time=72:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=marcello.distasio@yale.edu
 
 # Set up enviroment such that st_pipeline_run.py is in $PATH
-# module load Python/3.8.6-GCCcore-10.2.0 # This includes Cython
+
+# NOTE: Load miniconda module if you need the job to have access to a particular conda environment
+# (uncomment if needed)
+module load miniconda
+conda init
+conda activate stpipeline
+
 
 
 # NEED TO RUN OpticNerveHead_DBiT/Analysis/Python/fastq_process.py on *_[Read|R|]*2.fastq first
