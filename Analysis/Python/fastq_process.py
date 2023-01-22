@@ -9,7 +9,7 @@
 # ------------------------------------------------------------------------------------------------------------------------
 
 from Bio import SeqIO
-from gzip import open as gzopen
+import gzip
 import shutil
 import os, sys
 import argparse
@@ -34,7 +34,7 @@ output_filename = os.path.join(basedir,''.join(fname.split('.')[:-2]) + '_proces
 
 # Process the file
 output_handle = open(output_filename, "w")
-with gzopen(input_filename, "rt") as handle:
+with gzip.open(input_filename, "rt") as handle:
     for record in SeqIO.parse(handle, "fastq"):
       cut_record = record[32:40] + record[70:78] + record[22:32]  # BC2 + BC1 + UMI
       SeqIO.write(cut_record, output_handle, "fastq")
