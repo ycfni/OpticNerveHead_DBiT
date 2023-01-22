@@ -30,7 +30,7 @@ OpticNerveHead_DBiT
 ```
 
 
-To run from raw data you need to get st_pipeline installed.  See [Analysis/Environment.txt](Analysis/Environment.txt).
+To run from raw data you need to get [st_pipeline](https://github.com/jfnavarro/st_pipeline) installed.  See [Analysis/Environment.txt](Analysis/Environment.txt).
 
 Then you need to build a reference for [STAR aligner](https://github.com/alexdobin/STAR). See [Analysis/Scripts/BuildSTARreference.sh](Analysis/Scripts/BuildSTARreference.sh).
 
