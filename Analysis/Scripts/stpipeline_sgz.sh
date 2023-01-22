@@ -6,31 +6,12 @@
 
 # NEED TO RUN OpticNerveHead_DBiT/Analysis/Python/fastq_process.py on *_[Read|R|]*2.fastq first
 # FASTQ reads
-FW=`pwd`/../data/__SAMPLENAME__pass1.fastq.gz
-RV=`pwd`/../data/__SAMPLENAME__pass2.fastq.gz
-#FW=PATH_TO_PROCESSED_R2/sample_R2_processed.fastq.gz
-#RV=PATH_TO_R1/R1.fastq.gz
-#FW=$HOME/scratch60/mmdstp/DBiT_seq_FFPE_example/data/fastq/SRR12515582_pass_2_processed.fastq.gz
-#RV=$HOME/scratch60/mmdstp/DBiT_seq_FFPE_example/data/fastq/SRR12515582_pass_1.fastq.gz
-#FW=$HOME/yard/mmdstp/data_sgz/tinygex_S1_L002_R2_001.fastq.gz
-#RV=$HOME/yard/mmdstp/data_sgz/tinygex_S1_L002_R1_001.fastq.gz
-#FW=$HOME/Workspace/DBiT-seq_FFPE/data/fastq/SRR12515582_pass_2_processed.fastq.gz
-#RV=$HOME/Workspace/DBiT-seq_FFPE/data/fastq/SRR12515582_pass_1.fastq.gz
-
-
-#####################  SGZ: NEED TO POINT TO HUMAN REF (i.e. GRCh38-3.0.0_premrna)
-
+FW=`pwd`/../../data/Undetermined_S0_L002_R1_001_filtered.fastq.gz
+RV=`pwd`/../../data/Undetermined_S0_L002_R2_001_filtered.fastq.gz
 
 # References for mapping, annotation and nonRNA-filtering
-#MAP=PATH_TO_ALIGNMENT_REF/Dropseq_Alignment_References/mm10/
-#MAP=$HOME/yard/mmdstp/data_sgz/reference_genomes/mm10/index_star_chr6
-MAP=$HOME/scratch60/mmdstp/DBiT_seq_FFPE_example/data/reference_genomes/mm10
-#MAP=$HOME/Workspace/DBiT-seq_FFPE/data/reference_genomes/mm10
-#ANN=PATH_TO_ALIGNMENT_REF_GTF/Dropseq_Alignment_References/mm10/mm10.gtf
-#ANN=$HOME/yard/mmdstp/data_sgz/reference_genomes/mm10/genes.gtf
-ANN=/gpfs/ycga/datasets/genomes/Mus_musculus/UCSC/mm10/Annotation/Genes/genes.gtf
-#CONT=/gpfs/ycga/project/fan/yd279/Spatial_omics_references/mouse/GRCm38_86/ncRNA/StarIndex/
-
+MAP=`pwd`/../../ReferenceFiles/
+ANN=`pwd`/../../ReferenceFiles/
 
 ############################## SGZ: COPY FILES INTO HIS REPO and fix these paths for Rawdata_processing (copy in this OpticNerveHead_DBiT repo)
 
