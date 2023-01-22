@@ -9,16 +9,21 @@ OpticNerveHead_DBiT
 |
 |_______Analysis
 |	|	Environment.txt
+|	|	spatial_barcodes_index.txt
 |	|
 |	|_______Python
-|	|	| (Code goes here)
+|	|	| fastq_process.py
 |	|
 |	|_______R
 |	|	| (Code goes here)
 |	|
 |	|_______Scripts
-|	|	| (Shell scripts / code goes here)
-|	|
+|	|	| BuildSTARreference.sh
+|	|	| CellRangerAlign.sh  
+|	|	| converttoname_mmd.sh
+|	|	| GetDataFromArchive.s
+|	|	| SendDataToArchive.sh
+|	|	| stpipeline_submit.sh
 |	|
 |	|_______Results
 |		| (Output goes here)
