@@ -29,6 +29,20 @@ OpticNerveHead_DBiT
 
 ```
 
+Complete the directory setup with:
+
+```
+mkdir data
+mkdir data/raw
+mkdir data/processed
+mkdir ReferenceFiles
+```
+
+Put your raw ``*fastq.gz`` files in ``data/raw``.  Read 2 from the DBiT experiments needs to be preprocessed with ``Analysis/Python/fastq_process.py``:
+
+```
+python Analysis/Python/fastq_process.py -i data/raw/MyFastqFile_R2.fastq.gz
+```
 
 To run from raw data you need to get [st_pipeline](https://github.com/jfnavarro/st_pipeline) installed.  See [Analysis/Environment.txt](Analysis/Environment.txt).
 
