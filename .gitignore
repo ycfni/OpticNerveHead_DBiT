@@ -1,6 +1,9 @@
 # Any folder in the project tree called 'data' is ignored
 data
 
+# Any folder in the project tree called 'tmp' is ignored
+tmp
+
 # Any folder in the project tree called 'ReferenceFiles' is ignored
 ReferenceFiles
 
