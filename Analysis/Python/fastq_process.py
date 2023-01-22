@@ -1,3 +1,13 @@
+# ------------------------------------------------------------------------------------------------------------------------
+# fastq_process.py
+# Marcello DiStasio, modified from https://github.com/edicliuyang/DBiT-seq_FFPE/tree/master/Rawdata_processing
+# Jan 2023
+
+# Run as:
+# python fastq_process.py -i path/to/input/file.fastq.gz
+#
+# ------------------------------------------------------------------------------------------------------------------------
+
 from Bio import SeqIO
 from gzip import open as gzopen
 import shutil
