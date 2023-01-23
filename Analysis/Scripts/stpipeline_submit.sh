@@ -17,11 +17,10 @@ conda init
 conda activate stpipeline
 
 
-
 # NEED TO RUN OpticNerveHead_DBiT/Analysis/Python/fastq_process.py on *_[Read|R|]*2.fastq first
 # FASTQ reads
-FW=`pwd`/../../data/Undetermined_S0_L002_R1_001_filtered.fastq.gz
-RV=`pwd`/../../data/Undetermined_S0_L002_R2_001_filtered.fastq.gz
+RV=`pwd`/../../data/raw/Undetermined_S0_L002_R1_001_filtered_Ybarcode.fastq.gz 
+FW=`pwd`/../../data/raw/Undetermined_S0_L002_R2_001_filtered_Ybarcode_processed.fastq
 
 # References for mapping, annotation and nonRNA-filtering
 MAP=`pwd`/../../ReferenceFiles/hg38_STAR/
@@ -31,17 +30,16 @@ ANN=`pwd`/../../ReferenceFiles/genes.gtf
 ID=`pwd`/../spatial_barcodes_index.txt 
 
 # Output folder and experiment name
-PATH_TO_OUTPUT=`pwd`/../Results/
+PATH_TO_OUTPUT=`pwd`/../../data/processed
 OUTPUT=$PATH_TO_OUTPUT/st_pipeline_out/
 mkdir -p $OUTPUT
 
-PATH_TO_TEMP=`pwd`/../tmp/
+PATH_TO_TEMP=`pwd`/../../data/tmp/
 TMP=$PATH_TO_TEMP/st_pipeline_tmp/
 mkdir -p $TMP
 
-
 # EXP is the experiment name Do not add / or \ to the experiment name
-EXP=ONH_001
+EXP=ONH_A22-1650_Ybarcode
 
 # Running the pipeline
 st_pipeline_run.py \
