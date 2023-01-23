@@ -50,7 +50,9 @@ mkdir ReferenceFiles
 
 - Then you need to build a reference for [STAR aligner](https://github.com/alexdobin/STAR). See [Analysis/Scripts/BuildSTARreference.sh](Analysis/Scripts/BuildSTARreference.sh).
 
-- Put your raw ``*.fastq.gz`` files in ``data/raw``.  Read 2 from the DBiT experiments needs to be preprocessed with ``Analysis/Python/fastq_process.py``:
+- Put your raw ``*.fastq.gz`` files in ``data/raw``.  
+
+- Read 2 from the DBiT experiments needs to be preprocessed with ``Analysis/Python/fastq_process.py``:
 
     ```
     python Analysis/Python/fastq_process.py -i data/raw/MyFastqFile_R2.fastq.gz
