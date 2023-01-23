@@ -13,6 +13,9 @@ slurm*.out
 # Log files
 *.log
 
+# Jupyter notebook checkpoints
+.ipynb_checkpoints
+
 ### Emacs ###
 # -*- mode: gitignore; -*-
 *~
