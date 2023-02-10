@@ -7,6 +7,9 @@ tmp
 # Any folder in the project tree called 'ReferenceFiles' is ignored
 ReferenceFiles
 
+# Dropbox conflicts
+*conflicted copy*
+
 # Slurm job scheduler outputs
 slurm*.out
 
