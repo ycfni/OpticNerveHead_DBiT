@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --partition=general
-#SBATCH --job-name=stpipeline
+#SBATCH --job-name=BldSTARreferencep
 #SBATCH --cpus-per-task=12
 #SBATCH --mem=64G
 #SBATCH --time=72:00:00
