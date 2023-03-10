@@ -9,16 +9,21 @@ OpticNerveHead_DBiT
 |
 |_______Analysis
 |	|	Environment.txt
+|	|	spatial_barcodes_index.txt
 |	|
 |	|_______Python
-|	|	| (Code goes here)
+|	|	| fastq_process.py
 |	|
 |	|_______R
 |	|	| (Code goes here)
 |	|
 |	|_______Scripts
-|	|	| (Shell scripts / code goes here)
-|	|
+|	|	| BuildSTARreference.sh
+|	|	| CellRangerAlign.sh  
+|	|	| converttoname_mmd.sh
+|	|	| GetDataFromArchive.s
+|	|	| SendDataToArchive.sh
+|	|	| stpipeline_submit.sh
 |	|
 |	|_______Results
 |		| (Output goes here)
@@ -45,8 +50,17 @@ mkdir ReferenceFiles
 
 - Then you need to build a reference for [STAR aligner](https://github.com/alexdobin/STAR). See [Analysis/Scripts/BuildSTARreference.sh](Analysis/Scripts/BuildSTARreference.sh).
 
-- Put your raw ``*.fastq.gz`` files in ``data/raw``.  Read 2 from the DBiT experiments needs to be preprocessed with ``Analysis/Python/fastq_process.py``:
+- Put your raw ``*.fastq.gz`` files in ``data/raw``.  
+
+- Read 2 from the DBiT experiments needs to be preprocessed with ``Analysis/Python/fastq_process.py``:
 
     ```
     python Analysis/Python/fastq_process.py -i data/raw/MyFastqFile_R2.fastq.gz
     ```
+
+- Run st_pipeline with
+
+   ```
+   sbatch Analysis/Scripts/stpipeline_submit.sh
+   ```
+
