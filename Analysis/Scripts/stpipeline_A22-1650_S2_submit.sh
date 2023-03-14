@@ -20,7 +20,7 @@ conda activate stpipeline
 # NEED TO RUN OpticNerveHead_DBiT/Analysis/Python/fastq_process.py on *_[Read|R|]*2.fastq first
 # FASTQ reads
 RV=`pwd`/../../data/A22-1650_slide2/raw/usftp21.novogene.com/01.RawData/A22_1650_ON2/A22_1650_ON2_CKDL230003511-1A_HT2J2DSX5_L1_1.fq.gz
-FW=`pwd`/../../data/A22-1650_slide2/raw/usftp21.novogene.com/01.RawData/A22_1650_ON2/A22_1650_ON2_CKDL230003511-1A_HT2J2DSX5_L1_2.fq.gz
+FW=`pwd`/../../data/A22-1650_slide2/raw/usftp21.novogene.com/01.RawData/A22_1650_ON2/A22_1650_ON2_CKDL230003511-1A_HT2J2DSX5_L1_2_processed.fastq.gz
 
 # References for mapping, annotation and nonRNA-filtering
 MAP=`pwd`/../../ReferenceFiles/hg38_STAR/
