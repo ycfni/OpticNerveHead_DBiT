@@ -27,7 +27,7 @@ MAP=`pwd`/../../ReferenceFiles/hg38_STAR/
 ANN=`pwd`/../../ReferenceFiles/genes.gtf
 
 # Barcodes settings
-ID=`pwd`/../spatial_barcodes_index.txt 
+ID=`pwd`/../Library/spatial_barcodes_index.txt 
 
 # Output folder and experiment name
 PATH_TO_OUTPUT=`pwd`/../../data/A22-1650_slide2/processed/
