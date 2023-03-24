@@ -48,5 +48,6 @@ output = ["{}\t{}".format(a_, b_) for a_, b_ in zip(combinations, index_combinat
 # Write combinations to a text file
 with open(args.output_file, 'w') as outfile:
     outfile.write('\n'.join(output))
-
+    outfile.write('\n')
+    
 print("Index complete!")
