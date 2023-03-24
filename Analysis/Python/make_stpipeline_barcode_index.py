@@ -41,7 +41,7 @@ valsel = values[starti-1:endi]
 # Generate all combinations of strings
 combinations = [''.join(x) for x in itertools.product(valsel, repeat=2)]
 
-index_combinations = ['\t'.join([str(i) for i in x]) for x in itertools.product(range(endi-starti+1, 1, -1), range(1, endi-starti+2), repeat=1)]
+index_combinations = ['\t'.join([str(i) for i in x]) for x in itertools.product(range(endi-starti+1, 0, -1), range(1, endi-starti+2), repeat=1)]
 
 output = ["{}\t{}".format(a_, b_) for a_, b_ in zip(combinations, index_combinations)]
 
