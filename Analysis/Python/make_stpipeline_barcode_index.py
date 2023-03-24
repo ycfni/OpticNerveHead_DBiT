@@ -49,28 +49,4 @@ output = ["{}\t{}".format(a_, b_) for a_, b_ in zip(combinations, index_combinat
 with open(args.output_file, 'w') as outfile:
     outfile.write('\n'.join(output))
 
-
-
-    
-
-# # Open output text file
-# output_file = open("output.txt", "w")
-
-# # Loop through rows in worksheet
-# for row in worksheet.iter_rows(values_only=True):
-#     # Get string value in first column
-#     string_value = row[0]
-    
-#     # Get length of string value
-#     string_length = len(string_value)
-    
-#     # Loop through all combinations of two integer sequence indexes
-#     for i in range(string_length):
-#         for j in range(i+1, string_length+1):
-#             # Write combination to output text file
-#             output_file.write(string_value + '\t' + str(i) + '\t' + str(j) + '\n')
-
-# # Close output text file
-# output_file.close()
-
-# print("Conversion complete!")
+print("Index complete!")
